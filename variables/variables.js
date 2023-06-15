@@ -1,0 +1,1 @@
+let a=9; //This variable holds 9 as integer
