@@ -219,3 +219,101 @@ console.log(months)
 
 
 
+//Map() method It returns a new array containing the result of calling a function on every element in the array
+//array_name.map((current_value,index,array))
+
+
+let numbers=[1,3,2,4,5,6,56,7,6,7,3]
+
+
+let newNumber=numbers.map((current,index,array)=>{
+  return current>9
+})
+
+console.log(newNumber)
+
+//output :[
+  // false, false, false,
+  // false, false, false,
+  // true,  false, false,
+  // false, false
+// ]
+// 
+// =======================================================================================================================
+
+
+//Challenge 1
+// Find the square root of each element in an array
+//let arr=[25,36,49,64,81]
+
+//In the above question we have to find the square root of the element
+
+
+let arr=[25,36,49,64,81]
+
+
+let sqrt_arr=arr.map((element,index,array)=>{
+  return Math.sqrt(element)
+})
+
+console.log(sqrt_arr)
+
+//output [ 5, 6, 7, 8, 9 ]
+
+
+
+// Challenge-2
+//Multipy each element by 2 and return oonly those element which are greater than 10
+
+let arr_mul=[2,3,4,6,8]
+
+let mul_arr=arr_mul.map((element,index,array)=>{
+  var double=2*element
+  return double>10 
+})
+console.log(mul_arr)
+
+
+//Output: [ false, false, false, true, true ]
+
+
+let mul_new_arr=arr_mul.map((element)=>{
+  return element*2
+}).filter((element)=>{
+  return element>10
+}
+)
+
+console.log(mul_new_arr)
+
+
+//Output [ 12, 16 ]
+
+
+// =======================================================================================================================
+
+
+// Reduce() Method
+
+//flatten an array to convert the 3d or 2d array into a single dimensional array
+
+//The reduce() method executes a reducer function (that you provide) on each  element of the array , resulting in single output value
+//  The reducer function takes four argument
+//Accumulator
+// current value
+// current index
+// current array
+
+
+//reduce method is used to find the sum , mutliplication of array elements
+
+let sum_arr=[12,3,4]
+
+//find the sum
+
+
+
+let new_sum_arr=sum_arr.reduce((accumaltor,element,index,array)=>{
+  return accumaltor+=element
+})
+console.log(new_sum_arr)
