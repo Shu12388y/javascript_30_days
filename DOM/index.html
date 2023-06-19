@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      html,
+      body {
+        margin: 0%;
+        padding: 0%;
+        overflow-x: hidden;
+      }
+      .main {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 4rem;
+        flex-direction: column;
+        background-color: blue;
+      }
+      .child__1,
+      .child__2,
+      .child__3 {
+        color: aliceblue;
+        font-size: 2rem;
+        text-align: center;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="main">
+      <div class="child__1">Child 1</div>
+      <div class="child__2">Child 2</div>
+      <div class="child__3">Child 3</div>
+    </div>
+
+    <script src="dom.js"></script>
+  </body>
+</html>
