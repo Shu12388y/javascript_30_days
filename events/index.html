@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body,
+      html {
+        padding: 0%;
+        margin: 0%;
+        overflow-x: hidden;
+      }
+      .container {
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        margin-top: 5rem;
+        flex-direction: column;
+        gap: 4rem;
+      }
+      .element {
+        font-size: 2rem;
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+        background-color: aquamarine;
+        padding: 3rem;
+        width: 12rem;
+      }
+      .input {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+        margin: 3rem 0 0 0;
+        flex-direction: column;
+      }
+      .input__class {
+        width: 20rem;
+        padding: 2rem;
+      }
+      .display {
+        font-size: 2rem;
+        color: red;
+        padding: 2rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <!-- we will add event listerner -->
+    <div class="element">click me</div>
+      <div id="click__1" class="element">click me</div>
+      <div id="click__2" class="element">click me</div>
+      <div id="click__3" class="element">click me</div>
+    </div>
+
+    <div class="input">
+      <div class="input__field">
+        <input class="input__class" onkeypress="keysPush()" type="text" placeholder="enter your text" />
+      </div>
+      <div class="display">new</div>
+    </div>
+
+    <div class="named">
+        <input type="text" class="name__add">
+        <select name="ice-cream" id="ice-cream" onchange="changed()">
+            <option value="">ice-cream</option>
+            <option value="chocolate">chocolate</option>
+            <option value="vanila">vanila</option>
+            <option value="pineapple">pineapple</option>
+
+        </select>
+    </div>
+    <script src="event.js"></script>
+  </body>
+</html>
