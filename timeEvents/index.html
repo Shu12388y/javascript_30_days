@@ -1,25 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-<style>
-    html,body{
+    <style>
+      html,
+      body {
         padding: 0%;
         margin: 0%;
         overflow-x: hidden;
-    }
-    
-</style>
-</head>
+      }
+      .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5rem;
+        flex-direction: column;
+      }
+      .name__classs {
+        padding: 2rem;
+      }
+      .button__class {
+        width: 18rem;
+        padding: 1rem;
+        font-size: 1rem;
+      }
+    </style>
+  </head>
 
-<body>
-    
-
-
-
+  <body>
+    <div class="container">
+      <div class="name__classs">Loading...</div>
+      <button type="submit" class="button__class">click me</button>
+    </div>
 
     <script src="index.js"></script>
-</body>
+  </body>
 </html>
