@@ -1,0 +1,42 @@
+html,
+body {
+  padding: 0%;
+  margin: 0%;
+  overflow-x: hidden;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: lightcoral;
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 4rem;
+  background-color: lightblue;
+  padding: 2rem;
+  margin-top: 5rem;
+}
+.joke__data {
+  font-size: 1.7rem;
+  padding: 1rem;
+  font-family: "Courier New", Courier, monospace;
+  color: black;
+  background-color: lightsalmon;
+}
+
+.but__data {
+  width: 10rem;
+  padding: 0.8rem;
+  font-size: 0.9rem;
+  background-color: lightgreen;
+  font-family: "Courier New", Courier, monospace;
+  border: none;
+  border-radius: 1rem;
+  outline: none;
+}
