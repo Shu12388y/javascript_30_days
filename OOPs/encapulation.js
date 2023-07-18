@@ -5,7 +5,7 @@
 class BankAccount{
     userName;
     id;
-    #balance=0;  // !For make it private we use "!"
+    #balance=0;  // !For make it private we use "#"
 
 
     constructor(userName,balance=0){
